@@ -6,7 +6,7 @@
                 v-for="{ ingredient, amount } in recipe.ingredients"
                 :key="ingredient"
             >
-                {{ ingredient }} {{ amount }}
+                {{ amount }} {{ ingredient }}
             </li>
         </ul>
     </div>
