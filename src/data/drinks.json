@@ -195,5 +195,81 @@
                 "amount": "0.25 oz"
             }
         ]
+    },
+    {
+        "title": "French Martini",
+        "ingredients": [
+            {
+                "ingredient": "Vodka",
+                "amount": "2 oz"
+            },
+            {
+                "ingredient": "Pineapple Juice",
+                "amount": "1.5 oz"
+            },
+            {
+                "ingredient": "Chambord",
+                "amount": "0.5 oz"
+            }
+        ]
+    },
+    {
+        "title": "Royal Flush",
+        "ingredients": [
+            {
+                "ingredient": "Crown Royal",
+                "amount": "1.5 oz"
+            },
+            {
+                "ingredient": "Peach Schnapps",
+                "amount": "1 oz"
+            },
+            {
+                "ingredient": "Chambord",
+                "amount": "0.5 oz"
+            },
+            {
+                "ingredient": "Cranberry Juice",
+                "amount": "1 oz"
+            }
+        ]
+    },
+    {
+        "title": "Razzhattan",
+        "ingredients": [
+            {
+                "ingredient": "Crown Royal",
+                "amount": "1.25 oz"
+            },
+            {
+                "ingredient": "Chambord",
+                "amount": "0.5 oz"
+            },
+            {
+                "ingredient": "Sweet 'n Sour Mix",
+                "amount": "Splash"
+            },
+            {
+                "ingredient": "Cranberry Juice",
+                "amount": "Splash"
+            }
+        ]
+    },
+    {
+        "title": "Pineapple Martini",
+        "ingredients": [
+            {
+                "ingredient": "Pineapple Juice",
+                "amount": "1 oz"
+            },
+            {
+                "ingredient": "Vodka",
+                "amount": "1.5 oz"
+            },
+            {
+                "ingredient": "Chambord",
+                "amount": "0.5 oz"
+            }
+        ]
     }
 ]
