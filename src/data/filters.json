@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Alcohol",
+        "values": [
+            "Coconut Rum",
+            "Light Rum",
+            "Orange Liqueour",
+            "Peach Schnapps",
+            "Tequila",
+            "Vodka"
+        ]
+    },
+    {
+        "name": "Mixers",
+        "values": [
+            "Cranberry Juice",
+            "Ginger Beer",
+            "Margarita Mix",
+            "Orange Juice",
+            "Pineapple Juice",
+            "Sweet 'n Sour Mix"
+        ]
+    },
+    {
+        "name": "Miscellaneous",
+        "values": ["Cotton Candy", "Grenadine", "Simple Syrup"]
+    },
+    {
+        "name": "Produce",
+        "values": ["Lime"]
+    }
+]

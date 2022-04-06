@@ -1,0 +1,24 @@
+p {
+    margin: $padding 0;
+}
+
+.content {
+    clear: both;
+
+    @include respond-to('large') {
+        clear: none;
+        float: right;
+        width: calc(70% - 30px);
+    }
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 90%;
+    width: 1080px;
+}
+
+#app {
+    overflow: auto;
+    padding: $padding 0;
+}

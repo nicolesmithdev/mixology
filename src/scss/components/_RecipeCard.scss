@@ -1,0 +1,26 @@
+.recipes {
+    @include respond-to('medium') {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1rem;
+    }
+}
+
+.recipe {
+    background-color: $white;
+    border: 5px solid $medium-gray;
+    line-height: 20px;
+    padding: $padding;
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+        @include respond-to('medium') {
+            margin-bottom: 0;
+        }
+    }
+    > * {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

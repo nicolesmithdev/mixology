@@ -1,24 +1,15 @@
-# mixology
+# Mixology
 
-## Project setup
-```
-npm install
-```
+Mixology is a Vue successor to my React app [Eat The Rainbow](https://github.com/nicolesmithdev/eat-the-rainbow). This app houses my own tried and true cocktail recipes, allowing me to filter by ingredients I have on hand to see which drinks I can craft.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## How to Use
 
-### Compiles and minifies for production
-```
-npm run build
-```
+-   Root directory
+    -   `npm install`
+    -   `npm run serve`
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Changelog
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+April 6, 2022
+
+-   Initial commit
