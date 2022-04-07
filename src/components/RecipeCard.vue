@@ -5,6 +5,9 @@
             <li
                 v-for="{ ingredient, amount } in recipe.ingredients"
                 :key="ingredient"
+                :class="{
+                    highlight: nearMatch && activeFilters.includes(ingredient),
+                }"
             >
                 {{ amount }} {{ ingredient }}
             </li>
@@ -19,6 +22,16 @@ export default {
         recipe: {
             type: Object,
             required: true,
+        },
+        nearMatch: {
+            type: Boolean,
+            required: false,
+            default: false,
+        },
+    },
+    computed: {
+        activeFilters() {
+            return this.$store.getters.PROP('activeFilters');
         },
     },
 };

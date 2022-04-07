@@ -12,6 +12,7 @@ const store = createStore({
             activeFilters: [],
             hideFilters: false,
             recipes: recipes,
+            relatedRecipes: [],
             searchTerm: '',
         };
     },

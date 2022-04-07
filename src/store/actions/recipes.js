@@ -21,6 +21,12 @@ export default {
                     )
                 );
             });
+            let relatedRecipes = recipes.filter((recipe) =>
+                recipe.ingredients.some((c) =>
+                    activeFilters.includes(c.ingredient)
+                )
+            );
+            dispatch('PROP', { prop: 'relatedRecipes', value: relatedRecipes });
         }
         dispatch('PROP', { prop: 'recipes', value: results });
     },
