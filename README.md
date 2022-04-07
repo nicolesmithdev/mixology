@@ -4,11 +4,18 @@ Mixology is a Vue successor to my React app [Eat The Rainbow](https://github.com
 
 ## How to Use
 
+This app is deployed to GitHub pages and can be found here: https://nicolesmithdev.github.io/mixology/
+
 -   Root directory
     -   `npm install`
     -   `npm run serve`
 
 ## Changelog
+
+April 7, 2022
+
+-   Split results into "Exact Matches" and "Near Matches"
+-   Add deploy to GitHub pages script
 
 April 6, 2022
 
