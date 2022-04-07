@@ -5,6 +5,7 @@ export default {
         let activeFilters = getters.PROP('activeFilters');
         let searchTerm = getters.PROP('searchTerm');
         let results = recipes;
+        let relatedRecipes = [];
 
         if (searchTerm) {
             results = results.filter((recipe) =>
@@ -14,6 +15,11 @@ export default {
             );
         }
         if (activeFilters.length) {
+            relatedRecipes = results.filter((recipe) =>
+                recipe.ingredients.some((c) =>
+                    activeFilters.includes(c.ingredient)
+                )
+            );
             activeFilters.map((filter) => {
                 results = results.filter((recipe) =>
                     recipe.ingredients.some((c) =>
@@ -21,13 +27,8 @@ export default {
                     )
                 );
             });
-            let relatedRecipes = recipes.filter((recipe) =>
-                recipe.ingredients.some((c) =>
-                    activeFilters.includes(c.ingredient)
-                )
-            );
-            dispatch('PROP', { prop: 'relatedRecipes', value: relatedRecipes });
         }
         dispatch('PROP', { prop: 'recipes', value: results });
+        dispatch('PROP', { prop: 'relatedRecipes', value: relatedRecipes });
     },
 };
