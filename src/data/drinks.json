@@ -271,5 +271,106 @@
                 "amount": "0.5 oz"
             }
         ]
+    },
+    {
+        "title": "Call Me Maybe",
+        "ingredients": [
+            {
+                "ingredient": "Crown Royal",
+                "amount": "1 oz"
+            },
+            {
+                "ingredient": "Peach Schnapps",
+                "amount": "1 oz"
+            },
+            {
+                "ingredient": "Cranberry Juice",
+                "amount": "2 oz"
+            }
+        ]
+    },
+    {
+        "title": "Pink Silk Panties",
+        "ingredients": [
+            {
+                "ingredient": "Vodka",
+                "amount": "2 oz"
+            },
+            {
+                "ingredient": "Peach Schnapps",
+                "amount": "2 oz"
+            },
+            {
+                "ingredient": "Cranberry Juice",
+                "amount": "2 oz"
+            }
+        ]
+    },
+    {
+        "title": "Mexican Sunset",
+        "ingredients": [
+            {
+                "ingredient": "Amaretto",
+                "amount": "0.5 oz"
+            },
+            {
+                "ingredient": "Peach Schnapps",
+                "amount": "0.5 oz"
+            },
+            {
+                "ingredient": "Tequila",
+                "amount": "1.5 oz"
+            },
+            {
+                "ingredient": "Pineapple Juice",
+                "amount": "3 oz"
+            },
+            {
+                "ingredient": "Grenadine",
+                "amount": "0.25 oz"
+            }
+        ]
+    },
+    {
+        "title": "Sunset Martini",
+        "ingredients": [
+            {
+                "ingredient": "Pineapple Juice",
+                "amount": "2 oz"
+            },
+            {
+                "title": "Vodka",
+                "amount": "1 oz"
+            },
+            {
+                "title": "Coconut Rum",
+                "amount": "2 oz"
+            },
+            {
+                "ingredient": "Grenadine",
+                "amount": "0.5 oz"
+            }
+        ]
+    },
+    {
+        "title": "A Day at the Beach",
+        "ingredients": [
+            {
+                "ingredient": "Coconut Rum",
+                "amount": "2 oz"
+            },
+            {
+                "ingredient": "Amaretto",
+                "amount": "1 oz"
+            },
+            {
+                "ingredient": "Orange Juice",
+                "amount": "4 oz"
+            },
+            {
+                "ingredient": "Grenadine",
+                "amount": "0.5 oz"
+            }
+        ]
     }
 ]
