@@ -15,7 +15,6 @@ This app is deployed to GitHub pages and can be found here: https://nicolesmithd
 April 7, 2022
 
 -   Split results into "Exact Matches" and "Near Matches"
--   Add deploy to GitHub pages script
 
 April 6, 2022
 
