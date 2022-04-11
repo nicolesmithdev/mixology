@@ -8,12 +8,13 @@
     'base/typography';         // Typography
 
 @import
-    'components/Pagination',   // Pagination
-    'components/RecipeCard',   // Recipe Card
-    'components/SearchBar';    // Search Bar
+    'components/FiltersList',   // Filters Lists
+    'components/Pagination',    // Pagination
+    'components/RecipeCard',    // Recipe Card
+    'components/SearchBar';     // Search Bar
 
 @import
-    'layout/header',           // Header
-    'layout/footer',           // Footer
-    'layout/sidebar',          // Sidebar
-    'layout/forms';            // Forms
+    'layout/header',            // Header
+    'layout/footer',            // Footer
+    'layout/sidebar',           // Sidebar
+    'layout/forms';             // Forms

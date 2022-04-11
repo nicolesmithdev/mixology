@@ -1,0 +1,24 @@
+#filters {
+    @media screen and (max-width: 992px) {
+        background-color: $white;
+        border: 5px solid $medium-gray;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        display: none;
+        max-width: 544px;
+        padding: $padding/2;
+        position: absolute;
+        top: 75px;
+        width: 100%;
+        z-index: 1;
+
+        &.open {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .filter {
+                flex-basis: 48%;
+            }
+        }
+    }
+}
