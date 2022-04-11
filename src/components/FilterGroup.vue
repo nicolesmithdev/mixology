@@ -10,7 +10,6 @@
                     @change="toggleFilter"
                 />
                 <label :for="value">{{ value }}</label>
-                <span class="count">{{ count(value) }}</span>
             </li>
         </ul>
     </div>
@@ -31,15 +30,6 @@ export default {
         },
     },
     methods: {
-        count(value) {
-            return this.recipes.filter((recipe) =>
-                recipe.ingredients
-                    ? recipe.ingredients.some((item) =>
-                          item.ingredient.includes(`${value}`)
-                      )
-                    : false
-            ).length;
-        },
         toggleFilter(e) {
             const key = e.target.value.split('.')[0].toLowerCase(); // i.e. alcohol
             const value = e.target.value.split('.')[1]; // i.e. Tequila
