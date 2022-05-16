@@ -15,11 +15,7 @@ export default {
             );
         }
         if (activeFilters.length) {
-            relatedRecipes = results.filter((recipe) =>
-                recipe.ingredients.some((c) =>
-                    activeFilters.includes(c.ingredient)
-                )
-            );
+            // returns exact matches
             activeFilters.map((filter) => {
                 results = results.filter((recipe) =>
                     recipe.ingredients.some((c) =>
@@ -27,6 +23,24 @@ export default {
                     )
                 );
             });
+            relatedRecipes = recipes
+                .filter((recipe) => {
+                    // if every ingredient in a recipe is included
+                    // in activeFilters, mark that recipe as a "match"
+                    if (
+                        recipe.ingredients.every(({ ingredient }) =>
+                            activeFilters.includes(ingredient)
+                        )
+                    ) {
+                        results.push(recipe);
+                        // otherwise mark it as a "near match"
+                    } else {
+                        return recipe.ingredients.some(({ ingredient }) =>
+                            activeFilters.includes(ingredient)
+                        );
+                    }
+                })
+                .filter((recipe) => !results.includes(recipe));
         }
         dispatch('PROP', { prop: 'recipes', value: results });
         dispatch('PROP', { prop: 'relatedRecipes', value: relatedRecipes });
