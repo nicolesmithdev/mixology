@@ -1,10 +1,10 @@
 <template>
-    <h2 v-if="hasActiveFilters">Exact Matches</h2>
+    <h2 v-if="hasActiveFilters">Matches</h2>
     <p v-if="results.length > 0">
         Showing {{ results.length }}
-        {{ hasActiveFilters ? 'exact matches' : 'recipes' }}
+        {{ hasActiveFilters ? 'matches' : 'recipes' }}
     </p>
-    <p v-else><em>0 exact matches found</em></p>
+    <p v-else><em>0 matches found</em></p>
     <div v-if="results.length > 0" class="recipes">
         <RecipeCard v-for="(recipe, i) in results" :key="i" :recipe="recipe" />
     </div>
