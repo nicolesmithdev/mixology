@@ -372,5 +372,26 @@
                 "amount": "0.5 oz"
             }
         ]
+    },
+    {
+        "title": "Raspberry Martini",
+        "ingredients": [
+            {
+                "ingredient": "Raspberry Puree",
+                "amount": "2 oz"
+            },
+            {
+                "ingredient": "Vodka",
+                "amount": "1 oz"
+            },
+            {
+                "ingredient": "Amaretto",
+                "amount": "0.5 oz"
+            },
+            {
+                "ingredient": "Chambord",
+                "amount": "0.25 oz"
+            }
+        ]
     }
 ]
