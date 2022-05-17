@@ -30,7 +30,8 @@ export default {
                     if (
                         recipe.ingredients.every(({ ingredient }) =>
                             activeFilters.includes(ingredient)
-                        )
+                        ) &&
+                        !results.includes(recipe)
                     ) {
                         results.push(recipe);
                         // otherwise mark it as a "near match"

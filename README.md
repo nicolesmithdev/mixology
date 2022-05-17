@@ -12,11 +12,14 @@ This project was bootstrapped with Vue CLI. It is deployed to GitHub pages and c
 
 ## Changelog
 
+May 17, 2022
+
+-   Fixed recipe filtering. Recipes exactly matching active filters were appearing twice in the results.
+
 May 16, 2022
 
--   Changed
-    -   Renamed "Exact Matches" to "Matches"
-    -   Improved recipe filtering. Previously a "match" was defined as a recipe that met _every_ active filter, i.e. an exact match. Now a recipe is a "match" if all ingredients can be found in the active filters.
+-   Renamed "Exact Matches" to "Matches"
+-   Improved recipe filtering. Previously a "match" was defined as a recipe that met _every_ active filter, i.e. an exact match. Now a recipe is a "match" if all ingredients can be found in the active filters.
 
 April 7, 2022
 
