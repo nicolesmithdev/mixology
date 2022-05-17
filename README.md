@@ -26,7 +26,9 @@ This app is deployed to GitHub pages and can be found here: https://nicolesmithd
 
 May 17, 2022
 
--   Fixed recipe filtering. Recipes exactly matching active filters were appearing twice in the results.
+-   Fixed recipe filtering
+    -   "exact match" recipes were appearing as duplicate results
+    -   search results did not result if filters were set
 
 May 16, 2022
 

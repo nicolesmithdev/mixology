@@ -7,15 +7,8 @@ export default {
         let results = recipes;
         let relatedRecipes = [];
 
-        if (searchTerm) {
-            results = results.filter((recipe) =>
-                recipe.title
-                    .toLowerCase()
-                    .includes(`${searchTerm.toLowerCase()}`)
-            );
-        }
-        if (activeFilters.length) {
-            // returns exact matches
+        if (activeFilters && activeFilters.length > 0) {
+            // return exact matches
             activeFilters.map((filter) => {
                 results = results.filter((recipe) =>
                     recipe.ingredients.some((c) =>
@@ -23,10 +16,11 @@ export default {
                     )
                 );
             });
+            // if every ingredient in a recipe is included
+            // in activeFilters, return that recipe as a "match"
+            // otherwise return it as a "near match"
             relatedRecipes = recipes
                 .filter((recipe) => {
-                    // if every ingredient in a recipe is included
-                    // in activeFilters, mark that recipe as a "match"
                     if (
                         recipe.ingredients.every(({ ingredient }) =>
                             activeFilters.includes(ingredient)
@@ -34,15 +28,28 @@ export default {
                         !results.includes(recipe)
                     ) {
                         results.push(recipe);
-                        // otherwise mark it as a "near match"
-                    } else {
-                        return recipe.ingredients.some(({ ingredient }) =>
-                            activeFilters.includes(ingredient)
-                        );
+                        return;
                     }
+                    return recipe.ingredients.some(({ ingredient }) =>
+                        activeFilters.includes(ingredient)
+                    );
                 })
                 .filter((recipe) => !results.includes(recipe));
         }
+
+        if (searchTerm) {
+            results = results.filter((recipe) =>
+                recipe.title
+                    .toLowerCase()
+                    .includes(`${searchTerm.toLowerCase()}`)
+            );
+            relatedRecipes = relatedRecipes.filter((recipe) =>
+                recipe.title
+                    .toLowerCase()
+                    .includes(`${searchTerm.toLowerCase()}`)
+            );
+        }
+
         dispatch('PROP', { prop: 'recipes', value: results });
         dispatch('PROP', { prop: 'relatedRecipes', value: relatedRecipes });
     },
