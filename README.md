@@ -1,14 +1,26 @@
 # Mixology
 
-Mixology is a Vue successor to my React app [Eat The Rainbow](https://github.com/nicolesmithdev/eat-the-rainbow). This app houses my own tried and true cocktail recipes, allowing me to filter by ingredients I have on hand to see which drinks I can craft.
+Mixology is a Vue successor to my React app [Eat The Rainbow](https://github.com/nicolesmithdev/eat-the-rainbow). It is bootstrapped with Vue CLI. This app houses my own tried and true cocktail recipes, allowing me to filter by ingredients I have on hand to see which drinks I can craft.
 
 ## How to Use
 
-This project was bootstrapped with Vue CLI. It is deployed to GitHub pages and can be found here: https://nicolesmithdev.github.io/mixology/
+Root directory
 
--   Root directory
-    -   `npm install`
-    -   `npm run serve`
+-   `npm install`
+-   `npm run serve`
+
+### How to Deploy to GitHub Pages
+
+This app is deployed to GitHub pages and can be found here: https://nicolesmithdev.github.io/mixology/
+
+1. `git checkout --orphan gh-pages`
+2. `npm run build`
+3. `git --work-tree dist add --all`
+4. `git --work-tree dist commit -m "Deploy"`
+5. `git push origin HEAD:gh-pages --force`
+6. `rm -r dist`
+7. `git checkout -f main`
+8. `git branch -D gh-pages`
 
 ## Changelog
 
