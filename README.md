@@ -27,6 +27,7 @@ This app is deployed to GitHub pages and can be found here: https://nicolesmithd
 May 18, 2022
 
 -   UI: added clear search icon/functionality
+-   Feature: added `npm run deploy` script to deploy to GitHub pages
 
 May 17, 2022
 
