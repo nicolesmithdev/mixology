@@ -8,7 +8,7 @@
                 type="text"
                 placeholder="Search..."
             />
-            <i class="icon clear" @click="clearSearch" />
+            <i v-if="searchTerm" class="icon clear" @click="clearSearch" />
         </div>
     </div>
 </template>
