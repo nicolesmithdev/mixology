@@ -4,23 +4,14 @@ Mixology is a Vue successor to my React app [Eat The Rainbow](https://github.com
 
 ## How to Use
 
+This app is deployed to GitHub pages and can be found here: https://nicolesmithdev.github.io/mixology/
+
+### Local Setup
+
 Root directory
 
 -   `npm install`
 -   `npm run serve`
-
-### How to Deploy to GitHub Pages
-
-This app is deployed to GitHub pages and can be found here: https://nicolesmithdev.github.io/mixology/
-
-1. `git checkout --orphan gh-pages`
-2. `npm run build`
-3. `git --work-tree dist add --all`
-4. `git --work-tree dist commit -m "Deploy"`
-5. `git push origin HEAD:gh-pages --force`
-6. `rm -r dist`
-7. `git checkout -f main`
-8. `git branch -D gh-pages`
 
 ## Changelog
 

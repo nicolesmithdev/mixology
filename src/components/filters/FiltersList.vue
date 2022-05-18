@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import filters from '../data/filters';
+import filters from '@/data/filters';
 import FilterGroup from './FilterGroup';
 
 export default {

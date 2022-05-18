@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import FiltersList from './components/FiltersList';
+import FiltersList from './components/filters/FiltersList';
 import SearchBar from './components/SearchBar';
 import RecipeList from './components/RecipeList';
 
