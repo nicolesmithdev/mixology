@@ -24,6 +24,10 @@ This app is deployed to GitHub pages and can be found here: https://nicolesmithd
 
 ## Changelog
 
+May 18, 2022
+
+-   UI: added clear search icon/functionality
+
 May 17, 2022
 
 -   Fixed recipe filtering

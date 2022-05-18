@@ -1,12 +1,15 @@
 <template>
     <div id="search-bar">
         <i class="icon filter" @click="toggleFilters" />
-        <input
-            id="search"
-            type="text"
-            placeholder="Search..."
-            v-model="searchTerm"
-        />
+        <div class="fieldset">
+            <input
+                v-model="searchTerm"
+                id="search"
+                type="text"
+                placeholder="Search..."
+            />
+            <i class="icon clear" @click="clearSearch" />
+        </div>
     </div>
 </template>
 
@@ -34,6 +37,13 @@ export default {
                 prop: 'hideFilters',
                 value: !currentValue,
             });
+        },
+        clearSearch() {
+            this.$store
+                .dispatch('PROP', { prop: 'searchTerm', value: '' })
+                .then(() => {
+                    this.$store.dispatch('FETCH_RECIPES');
+                });
         },
     },
 };

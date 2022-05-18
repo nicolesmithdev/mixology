@@ -3,22 +3,36 @@
     display: flex;
     justify-content: flex-start;
     margin-bottom: $padding;
-
-    .icon.filter {
-        @media screen and (max-width: 992px) {
-            background-image: url('images/filter.svg');
+    .fieldset {
+        position: relative;
+        width: 100%;
+    }
+    .icon {
+        &.clear {
+            background-image: url('images/icon-clear.svg');
             background-repeat: no-repeat;
+            background-size: contain;
             content: '';
             cursor: pointer;
             display: inline-block;
-            height: 30px;
-            margin-right: $padding/2;
-            width: 30px;
+            height: 15px;
+            position: absolute;
+            right: $padding * 0.5;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
         }
-    }
-
-    form {
-        display: inline-block;
-        flex-grow: 1;
+        &.filter {
+            @media screen and (max-width: 992px) {
+                background-image: url('images/filter.svg');
+                background-repeat: no-repeat;
+                content: '';
+                cursor: pointer;
+                display: inline-block;
+                height: 30px;
+                margin-right: $padding/2;
+                width: 30px;
+            }
+        }
     }
 }
