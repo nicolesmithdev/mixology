@@ -11,4 +11,9 @@ module.exports = defineConfig({
             },
         },
     },
+    pluginOptions: {
+        browserSync: {
+            files: ['src/*'],
+        },
+    },
 });
