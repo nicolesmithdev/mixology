@@ -15,6 +15,10 @@ Root directory
 
 ## Changelog
 
+May 20, 2022
+
+-   Fix: change `some()` to `every()` for exact matches
+
 May 18, 2022
 
 -   UI: added clear search icon/functionality

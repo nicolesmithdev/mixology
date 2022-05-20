@@ -11,7 +11,7 @@ export default {
             // return exact matches
             activeFilters.map((filter) => {
                 results = results.filter((recipe) =>
-                    recipe.ingredients.some((c) =>
+                    recipe.ingredients.every((c) =>
                         c.ingredient.includes(filter)
                     )
                 );
