@@ -21,4 +21,24 @@
             }
         }
     }
+    button {
+        background: none;
+        border: none;
+        color: $red;
+        cursor: pointer;
+        font-size: $default-size;
+        font-weight: 500;
+        margin-bottom: $padding;
+        padding: 0;
+        &:before {
+            background-image: url('images/icon-remove.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+            display: inline-block;
+            height: 15px;
+            vertical-align: sub;
+            width: 15px;
+        }
+    }
 }

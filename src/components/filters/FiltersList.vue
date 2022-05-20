@@ -1,6 +1,9 @@
 <template>
     <div id="sidebar">
         <div id="filters" :class="[hideFilters ? 'hidden' : 'open']">
+            <button v-if="activeFilters.length" @click="resetFilters">
+                Reset Filters
+            </button>
             <FilterGroup
                 v-for="filter in filters"
                 :key="filter.name"
@@ -35,6 +38,9 @@ export default {
         hideFilters() {
             return this.$store.getters.PROP('hideFilters');
         },
+        activeFilters() {
+            return this.$store.getters.PROP('activeFilters');
+        },
     },
     methods: {
         resize() {
@@ -44,6 +50,9 @@ export default {
                     value: true,
                 });
             }
+        },
+        resetFilters() {
+            this.$store.dispatch('RESET_FILTERS');
         },
     },
 };

@@ -1,10 +1,10 @@
 <template>
     <li>
         <input
+            v-model="checkbox"
             type="checkbox"
             :id="value.toLowerCase()"
             :value="value"
-            @change="toggleFilter"
         />
         <label :for="value.toLowerCase()">{{ value }}</label>
     </li>
@@ -18,16 +18,23 @@ export default {
             required: true,
         },
     },
-    methods: {
-        toggleFilter(e) {
-            const payload = {
-                prop: 'activeFilters',
-                value: e.target.value,
-            };
-            let action = e.target.checked ? 'PROP_PUSH' : 'PROP_SPLICE';
-            this.$store.dispatch(action, payload).then(() => {
-                this.$store.dispatch('FETCH_RECIPES');
-            });
+    computed: {
+        activeFilters() {
+            return this.$store.getters.PROP('activeFilters');
+        },
+        checkbox: {
+            get() {
+                return (
+                    this.activeFilters &&
+                    this.activeFilters.includes(this.value)
+                );
+            },
+            set(value) {
+                this.$store.dispatch('TOGGLE_FILTER', {
+                    checked: value,
+                    filter: this.value,
+                });
+            },
         },
     },
 };

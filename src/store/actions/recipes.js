@@ -53,4 +53,15 @@ export default {
         dispatch('PROP', { prop: 'recipes', value: results });
         dispatch('PROP', { prop: 'relatedRecipes', value: relatedRecipes });
     },
+    RESET_FILTERS: ({ dispatch }) => {
+        dispatch('PROP', { prop: 'activeFilters', value: [] }).then(() => {
+            dispatch('FETCH_RECIPES');
+        });
+    },
+    TOGGLE_FILTER: ({ dispatch }, { checked, filter }) => {
+        let action = checked ? 'PROP_PUSH' : 'PROP_SPLICE';
+        dispatch(action, { prop: 'activeFilters', value: filter }).then(() => {
+            dispatch('FETCH_RECIPES');
+        });
+    },
 };

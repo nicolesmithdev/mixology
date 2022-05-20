@@ -19,6 +19,7 @@ May 20, 2022
 
 -   Fix: change `some()` to `every()` for exact matches
 -   Development: configured Browsersync
+-   UI: added "Reset Filters" button
 
 May 18, 2022
 
