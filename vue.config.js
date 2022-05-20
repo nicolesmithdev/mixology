@@ -2,6 +2,13 @@ const { defineConfig } = require('@vue/cli-service');
 const path = require('path');
 
 module.exports = defineConfig({
+    chainWebpack: (config) => {
+        config.plugin('html').tap((args) => {
+            args[0].title = 'Mixology';
+            args[0].minify = false;
+            return args;
+        });
+    },
     publicPath: '/mixology/',
     transpileDependencies: true,
     configureWebpack: {
