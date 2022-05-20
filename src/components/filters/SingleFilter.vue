@@ -3,7 +3,7 @@
         <input
             type="checkbox"
             :id="value.toLowerCase()"
-            :value="`${filter.name}.${value}`"
+            :value="value"
             @change="toggleFilter"
         />
         <label :for="value.toLowerCase()">{{ value }}</label>
