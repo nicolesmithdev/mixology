@@ -12,6 +12,7 @@
                 {{ amount }} {{ ingredient }}
             </li>
         </ul>
+        <p v-if="recipe.notes" v-html="recipe.notes" />
     </div>
 </template>
 

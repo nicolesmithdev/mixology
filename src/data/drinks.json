@@ -393,5 +393,27 @@
                 "amount": "0.25 oz"
             }
         ]
+    },
+    {
+        "title": "Caribbean Sunset Martini",
+        "ingredients": [
+            {
+                "ingredient": "Coconut Rum",
+                "amount": "1 oz"
+            },
+            {
+                "ingredient": "Vodka",
+                "amount": "2 oz"
+            },
+            {
+                "ingredient": "Cranberry Juice",
+                "amount": "2.5 oz"
+            },
+            {
+                "ingredient": "Lime",
+                "amount": "1 oz"
+            }
+        ],
+        "notes": "Technically uses raspberry vodka"
     }
 ]
