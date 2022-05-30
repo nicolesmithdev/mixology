@@ -28,7 +28,7 @@
                 "amount": "1.5 oz"
             },
             {
-                "ingredient": "Orange Liqueour",
+                "ingredient": "Orange Juice",
                 "amount": "3 oz"
             },
             {
@@ -80,12 +80,9 @@
             {
                 "ingredient": "Pineapple Juice",
                 "amount": "2 oz"
-            },
-            {
-                "ingredient": "Ice",
-                "amount": "n/a"
             }
-        ]
+        ],
+        "notes": "Blend with ice"
     },
     {
         "title": "Jamaican Cowboy",
