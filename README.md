@@ -18,6 +18,7 @@ Root directory
 June 12, 2022
 
 -   Replace SVG icons with Material Design Icons library
+-   Show "Reset Filters" button at all type, but add disabled styling when no filters are selected
 
 May 20, 2022
 

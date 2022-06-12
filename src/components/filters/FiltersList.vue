@@ -1,7 +1,7 @@
 <template>
     <div id="sidebar">
         <div id="filters" :class="[hideFilters ? 'hidden' : 'open']">
-            <button v-if="activeFilters.length" @click="resetFilters">
+            <button :disabled="disabled" @click="resetFilters">
                 <svg-icon type="mdi" :path="resetIcon" size="15" /> Reset
                 Filters
             </button>
@@ -45,6 +45,9 @@ export default {
         },
         activeFilters() {
             return this.$store.getters.PROP('activeFilters');
+        },
+        disabled() {
+            return !this.activeFilters.length ? true : false;
         },
     },
     methods: {
