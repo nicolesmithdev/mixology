@@ -1,6 +1,12 @@
 <template>
     <div id="search-bar">
-        <i class="icon filter" @click="toggleFilters" />
+        <svg-icon
+            type="mdi"
+            :path="filterIcon"
+            size="30"
+            @click="toggleFilters"
+            class="filter"
+        />
         <div class="fieldset">
             <input
                 v-model="searchTerm"
@@ -8,14 +14,32 @@
                 type="text"
                 placeholder="Search..."
             />
-            <i v-if="searchTerm" class="icon clear" @click="clearSearch" />
+            <svg-icon
+                v-if="searchTerm"
+                type="mdi"
+                :path="clearIcon"
+                size="15"
+                @click="clearSearch"
+            />
         </div>
     </div>
 </template>
 
 <script>
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiClose, mdiFilterMenu } from '@mdi/js';
+
 export default {
     name: 'SearchBar',
+    components: {
+        SvgIcon,
+    },
+    data() {
+        return {
+            clearIcon: mdiClose,
+            filterIcon: mdiFilterMenu,
+        };
+    },
     computed: {
         searchTerm: {
             get() {

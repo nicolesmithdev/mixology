@@ -2,7 +2,8 @@
     <div id="sidebar">
         <div id="filters" :class="[hideFilters ? 'hidden' : 'open']">
             <button v-if="activeFilters.length" @click="resetFilters">
-                Reset Filters
+                <svg-icon type="mdi" :path="resetIcon" size="15" /> Reset
+                Filters
             </button>
             <FilterGroup
                 v-for="filter in filters"
@@ -16,15 +17,19 @@
 <script>
 import filters from '@/data/filters';
 import FilterGroup from './FilterGroup';
+import SvgIcon from '@jamescoyle/vue-icon';
+import { mdiCloseCircle } from '@mdi/js';
 
 export default {
     name: 'FiltersList',
     components: {
         FilterGroup,
+        SvgIcon,
     },
     data() {
         return {
             filters: filters,
+            resetIcon: mdiCloseCircle,
         };
     },
     mounted() {

@@ -15,6 +15,10 @@ Root directory
 
 ## Changelog
 
+June 12, 2022
+
+-   Replace SVG icons with Material Design Icons library
+
 May 20, 2022
 
 -   Fix: change `some()` to `every()` for exact matches
