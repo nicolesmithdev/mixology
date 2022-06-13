@@ -26,6 +26,11 @@
             margin-bottom: 0;
         }
     }
+    .rating {
+        svg {
+            color: $amber;
+        }
+    }
     ul {
         padding-left: 0;
         li {

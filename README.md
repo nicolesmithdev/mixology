@@ -18,6 +18,7 @@ Root directory
 June 13, 2022
 
 -   Fix: Add additional padding around clear search icon for mobile UX
+-   UI: Add recipe ratings
 
 June 12, 2022
 
