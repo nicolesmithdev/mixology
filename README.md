@@ -13,6 +13,10 @@ Root directory
 -   `npm install`
 -   `npm run serve`
 
+## To Deploy
+
+-   `npm run deploy`
+
 ## Changelog
 
 June 13, 2022
