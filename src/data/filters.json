@@ -3,12 +3,15 @@
         "name": "Alcohol",
         "values": [
             "Amaretto",
+            "Banana Liqueour",
             "Chambord",
             "Coconut Rum",
             "Crown Royal",
+            "Dark Rum",
             "Light Rum",
             "Orange Liqueour",
             "Peach Schnapps",
+            "Rumchata",
             "Tequila",
             "Vodka"
         ]
@@ -16,6 +19,7 @@
     {
         "name": "Mixers",
         "values": [
+            "Blue Curacao",
             "Cranberry Juice",
             "Ginger Beer",
             "Margarita Mix",
