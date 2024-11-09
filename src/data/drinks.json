@@ -492,5 +492,26 @@
                 "amount": "0.25 oz"
             }
         ]
+    },
+    {
+        "title": "Lemon Drop Martini",
+        "ingredients": [
+            {
+                "ingredient": "Vodka",
+                "amount": "2 oz"
+            },
+            {
+                "ingredient": "Orange Liqueour",
+                "amount": "0.5 oz"
+            },
+            {
+                "ingredient": "Lemon",
+                "amount": "1 oz"
+            },
+            {
+                "ingredient": "Simple Syrup",
+                "amount": "1 oz"
+            }
+        ]
     }
 ]
