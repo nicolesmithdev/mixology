@@ -15,7 +15,7 @@ Root directory
 
 ## To Deploy
 
--   `npm run deploy`
+-   `git push origin main` will automatically kick off a build and deploy utilizing GitHub Actions
 
 ## Changelog
 
