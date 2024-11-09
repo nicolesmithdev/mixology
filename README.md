@@ -19,6 +19,10 @@ Root directory
 
 ## Changelog
 
+November 9, 2024
+
+-   Change deployment to GitHub Pages from npm script to GitHub Actions workflow
+
 June 13, 2022
 
 -   Fix: Add additional padding around clear search icon for mobile UX
