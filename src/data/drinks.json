@@ -512,6 +512,30 @@
                 "ingredient": "Simple Syrup",
                 "amount": "1 oz"
             }
-        ]
+        ],
+        "rating": 5
+    },
+    {
+        "title": "Crown Blackberry Smash",
+        "ingredients": [
+            {
+                "ingredient": "Crown Royal",
+                "amount": "2 oz"
+            },
+            {
+                "ingredient": "Blackberries",
+                "amount": "3-5, muddled"
+            },
+            {
+                "ingredient": "Lemon",
+                "amount": "1 oz"
+            },
+            {
+                "ingredient": "Simple Syrup",
+                "amount": "1 oz"
+            }
+        ],
+        "rating": 5,
+        "notes": "Best with Crown Royal Blackberry"
     }
 ]
