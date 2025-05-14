@@ -19,6 +19,10 @@ Root directory
 
 ## Changelog
 
+May 14, 2025
+
+-   Extend app into a Progressive Web App (`@vue/cli-plugin-pwa`)
+
 November 9, 2024
 
 -   Change deployment to GitHub Pages from npm script to GitHub Actions workflow

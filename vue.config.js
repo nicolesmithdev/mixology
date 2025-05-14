@@ -24,7 +24,7 @@ module.exports = defineConfig({
         },
     },
     pwa: {
-        name: "Mixology",
-        themeColor: "#ffd100"
-    }
+        name: 'Mixology',
+        themeColor: '#5c913b',
+    },
 });
