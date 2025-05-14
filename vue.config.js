@@ -23,4 +23,8 @@ module.exports = defineConfig({
             files: ['src/*'],
         },
     },
+    pwa: {
+        name: "Mixology",
+        themeColor: "#ffd100"
+    }
 });
