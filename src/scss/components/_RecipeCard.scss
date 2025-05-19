@@ -1,5 +1,8 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables" as *;
+
 .recipes {
-    @include respond-to('medium') {
+    @include mixins.respond-to('medium') {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-gap: 1rem;
@@ -16,7 +19,7 @@
     padding: $padding;
     &:not(:last-child) {
         margin-bottom: 1rem;
-        @include respond-to('medium') {
+        @include mixins.respond-to('medium') {
             margin-bottom: 0;
         }
     }

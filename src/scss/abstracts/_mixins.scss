@@ -1,3 +1,8 @@
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
+@use "variables" as *;
+
 @mixin background-gradient($topcolor, $bottomcolor) {
     background:$topcolor;
       background:-webkit-gradient(linear, left top, left bottom, from($topcolor), to($bottomcolor));
@@ -9,13 +14,13 @@
   // Responsive breakpoint manager
   // @requires $breakpoints
   @mixin respond-to($breakpoint) {
-    $raw-query: map-get($breakpoints, $breakpoint);
+    $raw-query: map.get($breakpoints, $breakpoint);
   
     @if $raw-query {
       $query: if(
-        type-of($raw-query) == 'string',
-        unquote($raw-query),
-        inspect($raw-query)
+        meta.type-of($raw-query) == 'string',
+        string.unquote($raw-query),
+        meta.inspect($raw-query)
         );
   
       @media #{$query} {

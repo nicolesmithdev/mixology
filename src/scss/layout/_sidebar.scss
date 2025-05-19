@@ -1,9 +1,12 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables" as *;
+
 #sidebar {
     font-size: 14px;
     line-height: 25px;
     position: relative;
 
-    @include respond-to('large') {
+    @include mixins.respond-to('large') {
         float: left;
         margin-bottom: $padding;
         width: 30%;
