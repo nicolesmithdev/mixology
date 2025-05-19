@@ -37,10 +37,14 @@
         padding: 0;
         &:disabled {
             color: $gray;
-            cursor: default;
+            cursor: not-allowed;
+            opacity: 0.5;
         }
         svg {
             margin-right: 0.25rem;
         }
+    }
+    input[type="checkbox"] + label {
+        cursor: pointer;
     }
 }
