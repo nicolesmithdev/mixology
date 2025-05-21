@@ -7,7 +7,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
         display: none;
         max-width: 544px;
-        padding: $padding/2;
+        padding: $padding * 0.5;
         position: absolute;
         top: 75px;
         width: 100%;

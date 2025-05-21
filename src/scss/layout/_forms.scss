@@ -7,7 +7,7 @@ textarea {
     border: 1px solid #EAEAEA;
     color: $default-color;
     font-size: $default-size;
-    padding: $padding/2;
+    padding: $padding * 0.5;
     width: 100%;
 }
 
