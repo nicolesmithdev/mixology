@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SingleFilter from './SingleFilter';
+import SingleFilter from './SingleFilter.vue';
 export default {
     name: 'FilterGroup',
     components: { SingleFilter },

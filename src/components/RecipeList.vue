@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import RecipeCard from './RecipeCard';
+import RecipeCard from './RecipeCard.vue';
 
 export default {
     components: {

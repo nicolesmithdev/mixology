@@ -16,7 +16,7 @@
 
 <script>
 import filters from '@/data/filters';
-import FilterGroup from './FilterGroup';
+import FilterGroup from './FilterGroup.vue';
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiCloseCircle } from '@mdi/js';
 

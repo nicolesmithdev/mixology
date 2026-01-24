@@ -11,13 +11,17 @@ This app is deployed to GitHub pages and can be found here: https://nicolesmithd
 Root directory
 
 -   `npm install`
--   `npm run serve`
+-   `npm run dev`
 
 ## To Deploy
 
 -   `git push origin main` will automatically kick off a build and deploy utilizing GitHub Actions
 
 ## Changelog
+
+January 24, 2026
+
+-   Migrate from Vue CLI to Vite
 
 May 14, 2025
 

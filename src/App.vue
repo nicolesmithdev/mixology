@@ -11,9 +11,9 @@
 
 <script>
 import PWAPrompt from "./components/PWAPrompt.vue";
-import FiltersList from "./components/filters/FiltersList";
-import SearchBar from "./components/SearchBar";
-import RecipeList from "./components/RecipeList";
+import FiltersList from "./components/filters/FiltersList.vue";
+import SearchBar from "./components/SearchBar.vue";
+import RecipeList from "./components/RecipeList.vue";
 
 export default {
     components: {
