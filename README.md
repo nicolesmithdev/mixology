@@ -19,6 +19,9 @@ Root directory
 
 ## Changelog
 
+June 17, 2026
+- Upgrade Vite v7 to v8. Required renaming `build.rollupOptions` to `build.rolldownOptions`
+
 January 24, 2026
 
 -   Migrate from Vue CLI to Vite

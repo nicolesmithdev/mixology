@@ -6,7 +6,8 @@ import { VitePWA } from "vite-plugin-pwa";
 export default defineConfig({
     base: "/mixology/",
     define: {
-        "process.env": {},
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV ?? 'production'),
+        'process.env': {},
     },
     plugins: [
         vue(),
@@ -50,7 +51,7 @@ export default defineConfig({
             fileName: "[name]",
             formats: ["es"],
         },
-        rollupOptions: {
+        rolldownOptions: {
             input: ["./index.html"],
             output: {
                 assetFileNames: ({ name }) => {
